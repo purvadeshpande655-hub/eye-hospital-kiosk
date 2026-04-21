@@ -23,8 +23,10 @@
       "dest": "/$1"
     }
   ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri"
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
   },
   "framework": "create-react-app"
 }
